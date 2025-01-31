@@ -1,0 +1,11 @@
+Make sure the following settings are setup in the project property pages:
+
+[C/C++ -> General -> Additional Include Directories] value: OpenSSL’s include directory in your machine (e.g C:\openssl\include)
+
+[Linker -> General -> Additional Library Directories] value: OpenSSL’s lib directory in your machine (e.g C:\openssl\lib)
+
+[Linker -> Input -> Additional Dependencies] value: libcrypto.lib
+
+Add libcrypto-1_1.dll to the Debug folder after compilation!!!
+
+Under "Project -> Properties -> C/C++ -> Preprocessor -> Preprocessor Definitions" add _CRT_SECURE_NO_WARNINGS
